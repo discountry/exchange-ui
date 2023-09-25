@@ -2,7 +2,7 @@
   "name": "exchange-ui",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/exchangeex/exchange-ui.git"
+    "url": "git+https://github.com/discountry/exchange-ui.git"
   },
   "version": "0.4.54",
   "module": "./dist/index.es.js",
@@ -99,9 +99,9 @@
     "jackspeak": "2.1.1"
   },
   "bugs": {
-    "url": "https://github.com/exchangeex/exchange-ui/issues"
+    "url": "https://github.com/discountry/exchange-ui/issues"
   },
   "readme": "README.md",
-  "homepage": "https://github.com/exchangeex/exchange-ui#readme",
+  "homepage": "https://github.com/discountry/exchange-ui#readme",
   "_id": "exchange-ui@0.1.95"
 }
