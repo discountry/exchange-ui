@@ -1,0 +1,11 @@
+.popover-container {
+  @apply eui-relative eui-max-w-fit;
+  .popover {
+    @apply eui-absolute eui-left-0 eui-top-4 eui-z-[1000] eui-hidden eui-shadow;
+  }
+  &:hover {
+    .popover {
+      @apply eui-flex;
+    }
+  }
+}

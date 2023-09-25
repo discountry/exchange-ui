@@ -1,0 +1,12 @@
+.tooltip-wrapper {
+  @apply eui-absolute eui-flex eui-min-w-[48px] eui-max-w-[500px] eui-flex-col eui-rounded-[4px] eui-px-[12px] eui-py-[8px];
+  .title {
+    @apply eui-text-[14px] eui-font-bold eui-leading-[20px];
+  }
+  .line {
+    @apply eui-h-[8px];
+  }
+  .content {
+    @apply eui-text-[12px] eui-font-medium eui-leading-[18px];
+  }
+}

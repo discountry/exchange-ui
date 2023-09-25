@@ -1,0 +1,24 @@
+.mock {
+  @apply eui-fixed eui-bottom-0 eui-left-0 eui-right-0 eui-top-0 eui-z-[9999] eui-bg-black/[.6];
+}
+
+.dialog {
+  max-height: calc(100% - 32px);
+}
+
+.title {
+  @apply eui-mb-[16px] eui-px-[24px] eui-text-[18px] eui-font-medium eui-tracking-[-0.2px];
+}
+
+.content {
+  @apply eui-mb-[26px] eui-flex-grow eui-overflow-y-auto eui-overflow-x-hidden eui-px-[24px] eui-text-[14px] eui-font-normal eui-leading-[20px] eui-tracking-[-0.2px];
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    width: 4px;
+    border-radius: 4px;
+    @apply eui-bg-light-fill-tertiary;
+  }
+}

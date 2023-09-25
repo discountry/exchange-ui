@@ -1,0 +1,91 @@
+.slider-container {
+  @apply eui-flex eui-w-full;
+  .slider-content {
+    @apply eui-relative eui-w-full;
+    .rail {
+      @apply eui-absolute;
+      @apply eui-w-full;
+      @apply eui-h-1;
+      @apply eui-rounded-full;
+      @apply eui-top-1/2;
+      @apply -eui-translate-y-1/2 eui-transform;
+    }
+    .track {
+      @apply eui-absolute;
+      @apply eui-h-1;
+      @apply eui-rounded-full;
+      @apply eui-top-1/2;
+      @apply -eui-translate-y-1/2 eui-transform;
+    }
+    .mark-container {
+      @apply eui-absolute;
+      @apply eui-flex;
+      @apply eui-justify-between;
+      @apply eui-w-full;
+      @apply eui-top-1/2;
+      @apply -eui-translate-y-1/2 eui-transform;
+      .mark {
+        @apply eui-w-2;
+        @apply eui-h-2;
+        @apply eui-rounded-full;
+        @apply eui-border;
+        @apply eui-cursor-pointer;
+        .mark-label {
+          @apply eui-absolute;
+          @apply eui-text-xs;
+          @apply eui-top-3;
+        }
+      }
+      .mark:first-of-type {
+        .mark-label {
+          @apply eui-left-0;
+        }
+      }
+      .mark:last-of-type {
+        .mark-label {
+          @apply eui-right-0;
+        }
+      }
+    }
+    .thumb-container {
+      @apply eui-relative;
+    }
+    .thumb-container:hover .tooltip {
+      @apply eui-opacity-100;
+      @apply eui-pointer-events-auto;
+    }
+    .thumb {
+      @apply eui-absolute;
+      @apply eui-w-4;
+      @apply eui-h-4;
+      @apply eui-rounded-full;
+      @apply eui-border-2;
+      @apply eui-top-1/2;
+      @apply -eui-translate-x-2 -eui-translate-y-1/2 eui-transform;
+      @apply eui-cursor-pointer;
+    }
+
+    .tooltip {
+      @apply eui-absolute;
+      @apply eui-text-xs;
+      @apply eui-rounded;
+      @apply eui-text-white;
+      @apply eui-px-3;
+      @apply eui-py-2;
+      @apply -eui-translate-x-[50%] -eui-translate-y-[150%] eui-transform;
+      @apply eui-transition-all;
+      @apply eui-opacity-0;
+      @apply eui-pointer-events-none;
+      @apply eui-z-10;
+    }
+
+    .tooltip::after {
+      content: " ";
+      position: absolute;
+      top: 100%; /* At the bottom of the tooltip */
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+    }
+  }
+}

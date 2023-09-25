@@ -1,0 +1,9 @@
+.tab {
+  @apply eui-inline-flex;
+  li {
+    @apply eui-mr-[16px] eui-flex eui-flex-col eui-items-center;
+  }
+  li:last-child {
+    @apply eui-mr-[0];
+  }
+}

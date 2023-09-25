@@ -1,0 +1,107 @@
+{
+  "name": "exchange-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exchangeex/exchange-ui.git"
+  },
+  "version": "0.4.53",
+  "module": "./dist/index.es.js",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.es.js",
+    "./exchange.css": "./dist/exchange.css",
+    "./theme": "./dist/config/theme.js",
+    "./Badge": "./dist/Badge.es.js",
+    "./Button": "./dist/Button.es.js",
+    "./Dialog": "./dist/Dialog.es.js",
+    "./Divider": "./dist/Divider.es.js",
+    "./Form": "./dist/Form.es.js",
+    "./Slider": "./dist/Slider.es.js",
+    "./Tooltip": "./dist/Tooltip.es.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && NODE_ENV=production vite build && cp -r ./src/types dist && cp -r ./src/config dist",
+    "build:css": "tailwindcss -m -i ./src/scss/base.scss -o ./dist/styles.css",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "chromatic": "npx chromatic --project-token=chpt_d1d6e61f4152403 --auto-accept-changes",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.6.0",
+    "clsx": "^1.2.1",
+    "react-transition-group": "^4.4.5",
+    "tailwind-merge": "^1.13.1"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.1",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.4.0",
+    "@storybook/addon-interactions": "^7.4.0",
+    "@storybook/addon-links": "^7.4.0",
+    "@storybook/addon-mdx-gfm": "^7.4.0",
+    "@storybook/addon-styling": "^1.3.7",
+    "@storybook/blocks": "^7.4.0",
+    "@storybook/react": "^7.4.0",
+    "@storybook/react-vite": "^7.4.0",
+    "@storybook/testing-library": "^0.2.0",
+    "@storybook/testing-react": "^2.0.1",
+    "@storybook/theming": "^7.4.0",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-transition-group": "^4.4.6",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "@vitest/ui": "^0.32.0",
+    "autoprefixer": "^10.4.14",
+    "chromatic": "^6.19.2",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "eslint-plugin-storybook": "^0.6.13",
+    "jsdom": "^22.1.0",
+    "postcss": "^8.4.24",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.1",
+    "sass": "^1.63.2",
+    "storybook": "^7.4.0",
+    "storybook-dark-mode": "^3.0.1",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^2.3.0",
+    "vite-plugin-svgr": "^3.2.0",
+    "vitepress": "^1.0.0-beta.6",
+    "vitest": "^0.32.0"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/exchangeex/exchange-ui/issues"
+  },
+  "readme": "README.md",
+  "homepage": "https://github.com/exchangeex/exchange-ui#readme",
+  "_id": "exchange-ui@0.1.95"
+}

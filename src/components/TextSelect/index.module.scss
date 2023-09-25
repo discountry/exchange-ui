@@ -1,0 +1,11 @@
+.options {
+  @apply eui-absolute eui-rounded-[4px] eui-py-[8px] eui-z-[99999];
+}
+
+.item {
+  @apply eui-flex eui-h-[34px] eui-cursor-pointer eui-items-center eui-px-[14px] eui-text-[12px];
+}
+
+.input {
+  @apply eui-cursor-pointer;
+}
