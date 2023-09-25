@@ -1,5 +1,5 @@
 import useTheme from "../../provider/useTheme";
-import { BUITheme } from "../../types/component";
+import { EUITheme } from "../../types/component";
 import { cn } from "../../utils/utils";
 import { DividerVariants, VerticalDividerVariants } from "./styles";
 
@@ -7,7 +7,7 @@ type DividerDirection = "vertical" | "horizontal";
 
 export interface DividerProps {
   direction: DividerDirection;
-  theme?: BUITheme;
+  theme?: EUITheme;
 }
 
 export const Divider = ({ direction = "horizontal", theme: mode }: DividerProps) => {

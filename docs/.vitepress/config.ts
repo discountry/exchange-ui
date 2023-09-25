@@ -10,7 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Exchange.com", link: "https://exchange.com/trade/futures/BTC-USDT" }
+      { text: "Exchange.com", link: "https://blofin.com/futures/BTC-USDT" }
     ],
 
     sidebar: [
@@ -23,7 +23,7 @@ export default defineConfig({
       }
     ],
 
-    socialLinks: [{ icon: "github", link: "https://github.com/exchange/exchange-ui" }]
+    socialLinks: [{ icon: "github", link: "https://github.com/discountry/exchange-ui" }]
   },
   base: "/exchange-ui/"
 });

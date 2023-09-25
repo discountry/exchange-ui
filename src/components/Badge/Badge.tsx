@@ -1,5 +1,5 @@
 import useTheme from "../../provider/useTheme";
-import { BUITheme } from "../../types/component";
+import { EUITheme } from "../../types/component";
 import { cn } from "../../utils/utils";
 import BadgeVariants, { BadgeColor } from "./styles";
 
@@ -17,7 +17,7 @@ export interface BadgeProps {
    */
   label: string;
 
-  theme?: BUITheme;
+  theme?: EUITheme;
 }
 
 export const Badge = ({ color = "primary", decoration = true, label, theme: mode }: BadgeProps) => {

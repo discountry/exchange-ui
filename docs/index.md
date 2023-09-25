@@ -12,7 +12,7 @@ hero:
       link: https://main--6487efa5fadd1ab4d229302f.chromatic.com/
     - theme: alt
       text: Live Preview
-      link: https://exchange.com/trade/futures/BTC-USDT
+      link: https://blofin.com/futures/BTC-USDT
 
 features:
   - title: High Performance
