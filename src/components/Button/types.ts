@@ -1,4 +1,4 @@
-import { BUIComponentSize } from "../../types/component";
+import { EUIComponentSize } from "../../types/component";
 
 export type ButtonVariant =
   | "primary"
@@ -10,6 +10,6 @@ export type ButtonVariant =
   | "buy"
   | "sell";
 
-export type ButtonSize = BUIComponentSize | "max";
+export type ButtonSize = EUIComponentSize | "max";
 
 export type ButtonShape = "normal" | "circle";

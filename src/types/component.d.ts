@@ -1,13 +1,13 @@
-export type BUIComponentSize = "large" | "medium" | "small";
+export type EUIComponentSize = "large" | "medium" | "small";
 
-export type BUIComponentColor = "primary" | "success" | "danger" | "warning";
+export type EUIComponentColor = "primary" | "success" | "danger" | "warning";
 
-export type BUIComponentType = "info" | "success" | "warning" | "danger";
+export type EUIComponentType = "info" | "success" | "warning" | "danger";
 
-export type BUITheme = "light" | "dark";
+export type EUITheme = "light" | "dark";
 
 export interface Base {
-  size: BUIComponentSize | string;
-  theme?: BUITheme;
+  size: EUIComponentSize | string;
+  theme?: EUITheme;
   className?: string;
 }

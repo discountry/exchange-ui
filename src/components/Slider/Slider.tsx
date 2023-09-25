@@ -1,6 +1,6 @@
 import { forwardRef, useCallback, useRef, useState } from "react";
 import useTheme from "../../provider/useTheme";
-import { BUITheme } from "../../types/component";
+import { EUITheme } from "../../types/component";
 import { cn } from "../../utils/utils";
 import styles from "./slider.module.scss";
 import {
@@ -25,9 +25,9 @@ export interface SliderProps {
    */
   onSliderChange: (value: number) => void;
   /**
-   * BUI theme
+   * EUI theme
    */
-  theme?: BUITheme;
+  theme?: EUITheme;
 }
 
 export const Slider = forwardRef<HTMLInputElement, SliderProps>((props, ref) => {

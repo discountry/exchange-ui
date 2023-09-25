@@ -1,5 +1,5 @@
 import { cva } from "class-variance-authority";
-import { BUITheme } from "../../types/component";
+import { EUITheme } from "../../types/component";
 
 export type InputVariant = "filled" | "outlined";
 
@@ -56,7 +56,7 @@ const InputBgVariants = ({
   noClassName = true
 }: {
   variant: InputVariant;
-  theme: BUITheme;
+  theme: EUITheme;
   error?: boolean;
   disabled?: boolean;
   noClassName?: boolean;

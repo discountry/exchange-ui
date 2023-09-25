@@ -4,7 +4,7 @@ import useStickyClassName from "../hooks/useStickyClassName";
 import useStickyOffset from "../hooks/useStickyOffset";
 import styles from "../index.module.scss";
 import { TableColumnProps } from "../interface";
-import { BUITheme, useTheme } from "../../..";
+import { EUITheme, useTheme } from "../../..";
 
 const Tbody: FC<{
   data: Record<string, string>[];
@@ -12,7 +12,7 @@ const Tbody: FC<{
   rowKey: string;
   rowClick?: (record: Record<string, string>) => void;
   tdClass?: string;
-  customeTheme?: BUITheme;
+  customeTheme?: EUITheme;
 }> = (props) => {
   const { data, columns, customeTheme } = props;
 

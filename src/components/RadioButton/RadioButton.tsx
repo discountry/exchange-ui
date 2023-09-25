@@ -1,11 +1,11 @@
 import { ReactNode, forwardRef } from "react";
-import { BUITheme, useTheme } from "../..";
+import { EUITheme, useTheme } from "../..";
 import { cn } from "../../utils/utils";
 import { RadioButtonInputVariants, RadioButtonLabelVariants } from "./styles";
 
 export interface RadioButtonProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: ReactNode;
-  theme?: BUITheme;
+  theme?: EUITheme;
   selected?: string;
 }
 

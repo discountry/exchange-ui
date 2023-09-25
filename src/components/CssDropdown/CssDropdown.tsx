@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import useTheme from "../../provider/useTheme";
-import { BUITheme } from "../../types/component";
+import { EUITheme } from "../../types/component";
 import { cn } from "../../utils/utils";
 import { menuStyles } from "./styles";
 
@@ -16,7 +16,7 @@ interface CssDropdownProps {
   /**
    * CssDropdown theme
    */
-  theme?: BUITheme;
+  theme?: EUITheme;
 }
 
 export const CssDropdown = ({ label, content, theme: mode }: CssDropdownProps) => {

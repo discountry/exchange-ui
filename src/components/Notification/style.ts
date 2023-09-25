@@ -1,5 +1,5 @@
 import { cva } from "class-variance-authority";
-import { BUIComponentType, BUITheme } from "../../types/component";
+import { EUIComponentType, EUITheme } from "../../types/component";
 
 const bgStyles = cva("", {
   variants: {
@@ -31,7 +31,7 @@ const textbg = cva("", {
   }
 });
 
-const iconstyles = (type: BUIComponentType, theme: BUITheme) => {
+const iconstyles = (type: EUIComponentType, theme: EUITheme) => {
   const colors = {
     light: {
       info: "eui-text-light-primary",

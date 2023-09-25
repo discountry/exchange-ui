@@ -1,8 +1,8 @@
 import { createContext } from "react";
-import { BUITheme } from "..";
+import { EUITheme } from "..";
 
 interface ThemeContextProps {
-  theme: BUITheme;
+  theme: EUITheme;
 }
 
 const ThemeContext = createContext<ThemeContextProps>({

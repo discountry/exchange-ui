@@ -1,5 +1,5 @@
 import { FC, createContext, useEffect, useRef, useState } from "react";
-import { BUIComponentType } from "../types/component";
+import { EUIComponentType } from "../types/component";
 import { Notification } from "../components/Notification/Notification";
 import { Toast } from "../components/Toast/Toast";
 
@@ -7,13 +7,13 @@ export interface NotificationType {
   title: string;
   node: React.ReactNode;
   id: number;
-  type: BUIComponentType;
+  type: EUIComponentType;
 }
 
 export interface ToastType {
   node: React.ReactNode;
   id: number;
-  type: BUIComponentType;
+  type: EUIComponentType;
 }
 
 export type configType = {
@@ -21,9 +21,9 @@ export type configType = {
   msg: string;
 };
 
-export type Methods = (config: configType, type: BUIComponentType) => void;
+export type Methods = (config: configType, type: EUIComponentType) => void;
 
-export type ToastMthods = (msg: string, type: BUIComponentType) => void;
+export type ToastMthods = (msg: string, type: EUIComponentType) => void;
 
 interface NoticeContextProps {
   notificationList: NotificationType[];
@@ -62,7 +62,7 @@ const NoticeProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
 
   const toastKey = useRef(0);
 
-  const open = (config: configType, type: BUIComponentType) => {
+  const open = (config: configType, type: EUIComponentType) => {
     setNotificationList((list) => [
       ...list,
       {
@@ -79,7 +79,7 @@ const NoticeProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
     setNotificationList((val) => val.filter((item) => item.id !== id));
   };
 
-  const openToast = (config: string, type: BUIComponentType) => {
+  const openToast = (config: string, type: EUIComponentType) => {
     setToastList((list) => [
       ...list,
       {
@@ -113,7 +113,7 @@ const NoticeProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
       }}>
       {children}
       {visible && <Notification />}
-      {visible && <Toast/>}
+      {visible && <Toast />}
     </NoticeContext.Provider>
   );
 };

@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import { BUIComponentSize, BUITheme } from "../../types/component";
+import { EUIComponentSize, EUITheme } from "../../types/component";
 import CloseIcon from "../../assets/icons/close.svg";
 import { Button } from "../Button/Button";
 import { dialogVariants, footerStyles, iconStyles, textStyles } from "./styles";
@@ -10,7 +10,7 @@ import styles from "./index.module.scss";
 
 interface DialogProps {
   title: null | string | React.ReactNode;
-  size: BUIComponentSize;
+  size: EUIComponentSize;
   content: string | React.ReactNode;
   cancelText?: string;
   confirmText?: string;
@@ -18,7 +18,7 @@ interface DialogProps {
   cancel?: () => void;
   confirm?: () => void;
   open: boolean;
-  theme?: BUITheme;
+  theme?: EUITheme;
   footerLayout?: "right" | "left" | "center";
   footerSize?: ButtonSize;
   hideCancel?: Boolean;

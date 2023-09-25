@@ -1,5 +1,5 @@
 import { cva } from "class-variance-authority";
-import { BUITheme } from "../..";
+import { EUITheme } from "../..";
 
 const CheckboxCheckedStyles = cva("", {
   variants: {
@@ -19,7 +19,7 @@ const CheckMarkCheckedStyles = cva("", {
   }
 });
 
-const CheckMarkVariants = ({ theme, checked }: { theme: BUITheme; checked: boolean }) => {
+const CheckMarkVariants = ({ theme, checked }: { theme: EUITheme; checked: boolean }) => {
   return cva(
     "eui-flex eui-h-3 eui-w-3 eui-items-center eui-justify-center eui-border eui-bg-transparent",
     {
@@ -36,7 +36,7 @@ const CheckMarkVariants = ({ theme, checked }: { theme: BUITheme; checked: boole
   )({ theme, checked });
 };
 
-const CheckboxLabelVariants = ({ theme, checked }: { theme: BUITheme; checked: boolean }) => {
+const CheckboxLabelVariants = ({ theme, checked }: { theme: EUITheme; checked: boolean }) => {
   return cva("eui-select-none eui-text-sm", {
     variants: {
       theme: {

@@ -1,6 +1,6 @@
 import { cva } from "class-variance-authority";
-import { BUITheme } from "../..";
-import { BUIComponentType } from "../../types/component";
+import { EUITheme } from "../..";
+import { EUIComponentType } from "../../types/component";
 
 const toastVariants = cva(
   "eui-flex eui-rounded-[6px] eui-px-[18px] eui-py-[8px] eui-text-[16px] max-[600px]:eui-flex-col max-[600px]:eui-items-center max-[600px]:eui-px-[9px] max-[600px]:eui-py-[4px]  max-[600px]:eui-text-[12px]",
@@ -34,7 +34,7 @@ const textStyles = cva("", {
   }
 });
 
-const iconstyles = (type: BUIComponentType, theme: BUITheme) => {
+const iconstyles = (type: EUIComponentType, theme: EUITheme) => {
   const colors = {
     light: {
       info: "eui-text-light-primary",
@@ -51,7 +51,7 @@ const iconstyles = (type: BUIComponentType, theme: BUITheme) => {
   };
 
   return cva(
-    "eui-w-[24px eui-mr-[16px] eui-h-[24px] eui-shrink-0 max-[600px]:eui-mr-[0] max-[600px]:eui-mb-[8px]",
+    "eui-w-[24px eui-mr-[16px] eui-h-[24px] eui-shrink-0 max-[600px]:eui-mb-[8px] max-[600px]:eui-mr-[0]",
     {
       variants: {
         theme: {

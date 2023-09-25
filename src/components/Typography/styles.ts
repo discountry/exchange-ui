@@ -1,5 +1,5 @@
 import { cva } from "class-variance-authority";
-import { BUITheme } from "../..";
+import { EUITheme } from "../..";
 
 export type TypographyTagType = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
 
@@ -23,7 +23,7 @@ export type TypographyVariantsType =
 const TypographyVariants = (props: {
   variant: TypographyVariantsType;
   weight: TypographyWeight;
-  theme: BUITheme;
+  theme: EUITheme;
 }) => {
   return cva("", {
     variants: {

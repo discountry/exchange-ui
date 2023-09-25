@@ -25,7 +25,7 @@ import { NoticeProvider } from "./provider/NoticeProvider";
 import { ThemeProvider } from "./provider/ThemeProvider";
 import useTheme from "./provider/useTheme";
 import "./scss/base.scss";
-import { BUIComponentColor, BUIComponentSize, BUITheme } from "./types/component";
+import { EUIComponentColor, EUIComponentSize, EUITheme } from "./types/component";
 
 export {
   Badge,
@@ -51,7 +51,7 @@ export {
   RadioButton
 };
 
-export type { BUIComponentColor, BUIComponentSize, BUITheme, TableColumnProps, TextAlign };
+export type { EUIComponentColor, EUIComponentSize, EUITheme, TableColumnProps, TextAlign };
 
 export { NoticeProvider, ThemeProvider };
 

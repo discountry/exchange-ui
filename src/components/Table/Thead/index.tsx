@@ -6,14 +6,14 @@ import useStickyClassName from "../hooks/useStickyClassName";
 import useStickyOffset from "../hooks/useStickyOffset";
 import styles from "../index.module.scss";
 import { SortProps, TableColumnProps } from "../interface";
-import { BUITheme, useTheme } from "../../..";
+import { EUITheme, useTheme } from "../../..";
 
 const Thead: FC<{
   columns: TableColumnProps[];
   scroll?: boolean;
   onChange?: SortProps;
   theadClass?: string;
-  customeTheme?: BUITheme;
+  customeTheme?: EUITheme;
 }> = (props) => {
   const { columns, customeTheme } = props;
 
@@ -33,7 +33,7 @@ const Thead: FC<{
     <SortGroup>
       <thead
         className={`${styles.thead} ${props.theadClass}`}
-        style={props.scroll ? { position: "sticky", zIndex: "999", top: '-1px' } : {}}>
+        style={props.scroll ? { position: "sticky", zIndex: "999", top: "-1px" } : {}}>
         <tr>
           {columns.map((item, index) => {
             return (

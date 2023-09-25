@@ -8,16 +8,16 @@ import Danger from "../../assets/icons/danger.svg";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import styles from "./toast.module.scss";
 import useTheme from "../../provider/useTheme";
-import { BUIComponentType } from "../../types/component";
+import { EUIComponentType } from "../../types/component";
 import { NoticeContext } from "../../provider/NoticeProvider";
 
 interface ToastMsgProps {
   children: React.ReactNode;
-  type: BUIComponentType;
+  type: EUIComponentType;
   remove: () => void;
 }
 
-type Methods = (msg: string, type: BUIComponentType) => void;
+type Methods = (msg: string, type: EUIComponentType) => void;
 
 interface ToastRef {
   info: Methods;
@@ -26,7 +26,7 @@ interface ToastRef {
   danger: Methods;
 }
 
-const Icon: FC<{ type: BUIComponentType }> = ({ type }) => {
+const Icon: FC<{ type: EUIComponentType }> = ({ type }) => {
   const { theme } = useTheme();
   const icons = {
     info: <Info className={iconstyles(type, theme)} />,

@@ -1,12 +1,12 @@
 import { LegacyRef, ReactNode, forwardRef } from "react";
 import useTheme from "../../provider/useTheme";
-import { BUITheme } from "../../types/component";
+import { EUITheme } from "../../types/component";
 import { cn } from "../../utils/utils";
 import { InputBgVariants, InputVariant } from "../LabelTextField/styles";
 
 export interface InputBaseProps extends React.InputHTMLAttributes<HTMLInputElement> {
   variant: InputVariant;
-  theme?: BUITheme;
+  theme?: EUITheme;
   startAdornment?: ReactNode;
   endAdornment?: ReactNode;
   disabled?: boolean;

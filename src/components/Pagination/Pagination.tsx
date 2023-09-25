@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 import useTheme from "../../provider/useTheme";
 import Arrow from "../../assets/icons/text-arrow.svg";
-import { BUITheme } from "../../types/component";
+import { EUITheme } from "../../types/component";
 import { paginationVariants, arrowVariants } from "./styles";
 
 export interface PaginationProps {
@@ -26,7 +26,7 @@ export interface PaginationProps {
    * Called when the page number is changed
    */
   className?: string;
-  theme?: BUITheme;
+  theme?: EUITheme;
 }
 
 export function Pagination({

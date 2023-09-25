@@ -1,5 +1,5 @@
 import React from "react";
-import { BUITheme } from "../..";
+import { EUITheme } from "../..";
 import useTheme from "../../provider/useTheme";
 import { cn } from "../../utils/utils";
 import TypographyVariants, { TypographyTagType } from "./styles";
@@ -32,7 +32,7 @@ export interface TypographyProps {
   weight?: TypographyWeight;
   className?: string;
   children?: React.ReactNode;
-  theme?: BUITheme;
+  theme?: EUITheme;
   component?: React.ElementType;
 }
 

@@ -1,5 +1,5 @@
 import { cva } from "class-variance-authority";
-import { BUITheme } from "../../types/component";
+import { EUITheme } from "../../types/component";
 
 const labelStyles = cva("", {
   variants: {
@@ -28,7 +28,7 @@ const activeItemStyles = cva("", {
   }
 });
 
-const menuItemStyles = ({ theme, active }: { theme: BUITheme; active: boolean }) => {
+const menuItemStyles = ({ theme, active }: { theme: EUITheme; active: boolean }) => {
   return cva(
     "eui-tracking-[-0.2px eui-w-full eui-cursor-pointer eui-p-[8px] eui-text-[12px] eui-leading-[18px]",
     {

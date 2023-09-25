@@ -1,5 +1,5 @@
 import { cva } from "class-variance-authority";
-import { BUITheme } from "../..";
+import { EUITheme } from "../..";
 
 const RadioButtonCheckedStyles = cva("", {
   variants: {
@@ -10,7 +10,7 @@ const RadioButtonCheckedStyles = cva("", {
   }
 });
 
-const RadioButtonLabelVariants = ({ theme, checked }: { theme: BUITheme; checked: boolean }) => {
+const RadioButtonLabelVariants = ({ theme, checked }: { theme: EUITheme; checked: boolean }) => {
   return cva("eui-select-none eui-text-sm", {
     variants: {
       theme: {
@@ -24,7 +24,7 @@ const RadioButtonLabelVariants = ({ theme, checked }: { theme: BUITheme; checked
   })({ theme, checked });
 };
 
-const RadioButtonInputVariants = ({ theme }: { theme: BUITheme }) => {
+const RadioButtonInputVariants = ({ theme }: { theme: EUITheme }) => {
   return cva(
     "eui-relative eui-h-4 eui-w-4 eui-appearance-none eui-rounded-full eui-border-2 checked:after:eui-absolute checked:after:eui-left-1/2 checked:after:eui-top-1/2 checked:after:eui-block checked:after:eui-h-2.5 checked:after:eui-w-2.5 checked:after:eui--translate-x-1/2 checked:after:eui--translate-y-1/2 checked:after:eui-transform checked:after:eui-rounded-full",
     {

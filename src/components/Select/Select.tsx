@@ -1,6 +1,6 @@
 import { ReactNode, forwardRef, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { BUITheme, Tooltip, Typography, useTheme } from "../..";
+import { EUITheme, Tooltip, Typography, useTheme } from "../..";
 import SelectArrow from "../../assets/icons/select-arrow.svg";
 import useAlign from "../../hooks/useAlign";
 import { keyBy } from "../../utils/helper";
@@ -61,7 +61,7 @@ const SelectMenu = ({
 
 export interface SelectProps extends React.InputHTMLAttributes<HTMLInputElement> {
   selectItems: SelectItem[];
-  theme?: BUITheme;
+  theme?: EUITheme;
   handleChange?: (value: string) => void;
   align?: "left" | "right";
   labelClassName?: string;

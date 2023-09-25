@@ -1,5 +1,5 @@
 import React, { Children, FC, Fragment, useMemo, useState } from "react";
-import { BUIComponentSize } from "../..";
+import { EUIComponentSize } from "../..";
 import useTheme from "../../provider/useTheme";
 import { Base } from "../../types/component";
 import { cn } from "../../utils/utils";
@@ -20,7 +20,7 @@ interface TabProps extends Base {
     label: string;
     children: React.ReactNode;
   }[];
-  size: BUIComponentSize;
+  size: EUIComponentSize;
   change: (key: string) => void;
   children?: React.ReactNode;
 }

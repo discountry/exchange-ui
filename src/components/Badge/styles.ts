@@ -1,9 +1,9 @@
 import { cva } from "class-variance-authority";
-import { BUIComponentColor, BUITheme } from "../../types/component";
+import { EUIComponentColor, EUITheme } from "../../types/component";
 
-export type BadgeColor = BUIComponentColor | "info" | "secondary";
+export type BadgeColor = EUIComponentColor | "info" | "secondary";
 
-const BadgeVariants = (props: { theme: BUITheme; color: BadgeColor }) => {
+const BadgeVariants = (props: { theme: EUITheme; color: BadgeColor }) => {
   const color = {
     dark: {
       primary: "eui-bg-dark-badge-primary-bg eui-text-dark-primary",

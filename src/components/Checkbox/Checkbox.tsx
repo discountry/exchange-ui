@@ -1,12 +1,12 @@
 import { ReactNode, forwardRef } from "react";
-import { BUITheme, useTheme } from "../..";
+import { EUITheme, useTheme } from "../..";
 import { cn } from "../../utils/utils";
 import styles from "./Checkbox.module.scss";
 import { CheckMarkVariants, CheckboxLabelVariants } from "./styles";
 
 export interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: ReactNode;
-  theme?: BUITheme;
+  theme?: EUITheme;
 }
 
 const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>((props, ref) => {

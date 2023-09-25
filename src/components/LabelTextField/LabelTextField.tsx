@@ -1,5 +1,5 @@
 import { forwardRef, LegacyRef, ReactNode } from "react";
-import { BUITheme } from "../..";
+import { EUITheme } from "../..";
 import useTheme from "../../provider/useTheme";
 import { cn } from "../../utils/utils";
 import { Typography } from "../Typography/Typography";
@@ -8,7 +8,7 @@ import { HelperTextVariants, InputBgVariants, InputVariant, LabelVariants } from
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: ReactNode;
   variant: InputVariant;
-  theme?: BUITheme;
+  theme?: EUITheme;
   startAdornment?: ReactNode;
   endAdornment?: ReactNode;
   error?: boolean;
